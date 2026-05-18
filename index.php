@@ -75,7 +75,7 @@ $resultat = mysqli_query($connexion, $requete);
 
 <header>
     <h1>OmnesEvent</h1>
-    <p>La plateforme des événements étudiants d’Omnes</p>
+    <p>La plateforme des événements étudiants d’Oomnes</p>
 
     <?php
     if (isset($_SESSION['nom'])) {
@@ -85,6 +85,31 @@ $resultat = mysqli_query($connexion, $requete);
 </header>
 
 <main>
+     <h2> Rechercher Evénement</h2>
+    <form method="GET" action="index.php">
+
+    <label>Date :</label>
+    <input type="date" name="date_event">
+
+    <label>Catégorie :</label>
+    <select name="categorie">
+
+        <option value="">Toutes</option>
+        <option value="Soirée">Soirée</option>
+        <option value="Sport">Sport</option>
+        <option value="Culture">Culture</option>
+
+    </select>
+
+    <label>Association :</label>
+    <input type="text" name="association">
+
+    <button type="submit">
+        Rechercher
+    </button>
+
+</form>
+
 
     <h2>Événements à venir</h2>
 
