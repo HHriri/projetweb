@@ -47,7 +47,7 @@ $resultat = mysqli_query($connexion, $requete);
 
 <head>
     <meta charset="UTF-8">
-    <title>OmnesEvent - Accueil</title>
+    <title>OmnesEvent - accueil</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
